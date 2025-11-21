@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PIMVIII.Models
+{
+    public class Playlist
+    {
+        public int ID { get; set; }
+        public string Nome { get; set; }
+        public int UsuarioID { get; set; }
+        public Usuario Usuario { get; set; }
+
+        public List<ItemPlaylist> Itens { get; set; } = new List<ItemPlaylist>();
+        
+        [NotMapped]
+        public List<Conteudo> Conteudos { get; set; } = new List<Conteudo>();
+    }
+}

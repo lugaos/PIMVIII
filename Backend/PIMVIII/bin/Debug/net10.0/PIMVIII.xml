@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PIMVIII</name>
+    </assembly>
+    <members>
+        <member name="M:PIMVIII.Controllers.PlaylistController.GetAll">
+            <summary>
+            Retorna todas as playlists cadastradas.
+            </summary>
+            <returns>Lista de playlists.</returns>
+        </member>
+        <member name="M:PIMVIII.Controllers.PlaylistController.GetById(System.Int32)">
+            <summary>
+            Retorna uma playlist localizada pelo Id informado.
+            </summary>
+            <returns>Playlist</returns>
+        </member>
+        <member name="M:PIMVIII.Controllers.PlaylistController.Add(PIMVIII.DTOs.PlaylistAddDto)">
+            <summary>
+            Adiciona uma nova playlist.
+            </summary>
+            <returns>Playlist.</returns>
+        </member>
+        <member name="M:PIMVIII.Controllers.PlaylistController.Update(System.Int32,PIMVIII.DTOs.PlaylistUpdateDto)">
+            <summary>
+            Atualiza uma playlist
+            </summary>
+        </member>
+        <member name="M:PIMVIII.Controllers.PlaylistController.Delete(System.Int32)">
+            <summary>
+            Exclui uma playlist
+            </summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.ConteudoDto">
+            <summary>
+            Modelo do conteúdo.
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.ConteudoDto.Id">
+            <summary>Id do conteúdo.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.ConteudoDto.Titulo">
+            <summary>Título do conteúdo.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.ConteudoDto.Tipo">
+            <summary>Tipo do conteúdo.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.ConteudoDto.Criador">
+            <summary>Criador do conteúdo.</summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.CriadorDto">
+            <summary>
+            Modelo de criador de conteúdo.
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.CriadorDto.Id">
+            <summary>Id do criador.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.CriadorDto.Nome">
+            <summary>Nome do criador.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.CriadorDto.Conteudos">
+            <summary>Lista de Conteudos do criador.</summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.PlaylistAddDto">
+            <summary>
+            Modelo para criar uma nova playlist
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistAddDto.Nome">
+            <summary>Nome da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistAddDto.IdUsuario">
+            <summary>Id do usuário criador da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistAddDto.IdConteudos">
+            <summary>Lista de ids dos conteúdos da playlist.</summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.PlaylistDto">
+            <summary>
+            Modelo da playlist.
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistDto.Id">
+            <summary>Identificador da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistDto.Nome">
+            <summary>Nome da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistDto.Usuario">
+            <summary>Dto do Usuario dono da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistDto.Conteudos">
+            <summary>Lista de Conteudos da Playlist.</summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.PlaylistResponseDto">
+            <summary>
+            Modelo de retorno de uma playlist.
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistResponseDto.Id">
+            <summary>Id da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistResponseDto.Nome">
+            <summary>Nome da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistResponseDto.Usuario">
+            <summary>Informações do usuário dono da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistResponseDto.Conteudos">
+            <summary>Lista de conteúdos da playlist.</summary>
+        </member>
+        <member name="T:PIMVIII.DTOs.PlaylistUpdateDto">
+            <summary>
+            Modelo para atualizar uma playlist.
+            </summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistUpdateDto.Nome">
+            <summary>Nome da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.PlaylistUpdateDto.IdConteudos">
+            <summary>Identificador dos conteudos da playlist.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.UsuarioDto.Id">
+            <summary>Id do usuário.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.UsuarioDto.Nome">
+            <summary>Nome do usuário.</summary>
+        </member>
+        <member name="P:PIMVIII.DTOs.UsuarioDto.Email">
+            <summary>Email do usuário.</summary>
+        </member>
+        <member name="T:PIMVIII.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

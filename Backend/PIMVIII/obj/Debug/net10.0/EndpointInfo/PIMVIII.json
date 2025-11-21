@@ -1,0 +1,337 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "PIMVIII",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Playlist": {
+      "get": {
+        "tags": [
+          "Playlist"
+        ],
+        "summary": "Retorna todas as playlists cadastradas.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlaylistDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlaylistDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PlaylistDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Playlist"
+        ],
+        "summary": "Adiciona uma nova playlist.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistAddDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistAddDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistAddDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Playlist/{id}": {
+      "get": {
+        "tags": [
+          "Playlist"
+        ],
+        "summary": "Retorna uma playlist localizada pelo Id informado.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaylistDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaylistDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaylistDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Playlist"
+        ],
+        "summary": "Atualiza uma playlist",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlaylistUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Playlist"
+        ],
+        "summary": "Exclui uma playlist",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ConteudoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Id do conteúdo.",
+            "format": "int32"
+          },
+          "titulo": {
+            "type": "string",
+            "description": "Título do conteúdo.",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "description": "Tipo do conteúdo.",
+            "nullable": true
+          },
+          "criador": {
+            "$ref": "#/components/schemas/CriadorDto"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Modelo do conteúdo."
+      },
+      "CriadorDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Id do criador.",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "description": "Nome do criador.",
+            "nullable": true
+          },
+          "conteudos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConteudoDto"
+            },
+            "description": "Lista de Conteudos do criador.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Modelo de criador de conteúdo."
+      },
+      "PlaylistAddDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "description": "Nome da playlist.",
+            "nullable": true
+          },
+          "idUsuario": {
+            "type": "integer",
+            "description": "Id do usuário criador da playlist.",
+            "format": "int32"
+          },
+          "idConteudos": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Lista de ids dos conteúdos da playlist.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Modelo para criar uma nova playlist"
+      },
+      "PlaylistDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Identificador da playlist.",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "description": "Nome da playlist.",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/UsuarioDto"
+          },
+          "conteudos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConteudoDto"
+            },
+            "description": "Lista de Conteudos da Playlist.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Modelo da playlist."
+      },
+      "PlaylistUpdateDto": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "description": "Nome da playlist.",
+            "nullable": true
+          },
+          "idConteudos": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Identificador dos conteudos da playlist.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Modelo para atualizar uma playlist."
+      },
+      "UsuarioDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Id do usuário.",
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string",
+            "description": "Nome do usuário.",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "description": "Email do usuário.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Playlist"
+    }
+  ]
+}
