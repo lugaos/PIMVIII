@@ -7,7 +7,6 @@ namespace PIMVIII.Models
         public int ID { get; set; }
         public string Nome { get; set; }
 
-        [NotMapped]
         public List<Conteudo> Conteudos { get; set; } = new List<Conteudo>();
     }
 }

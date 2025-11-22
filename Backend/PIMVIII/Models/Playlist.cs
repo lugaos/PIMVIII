@@ -10,8 +10,7 @@ namespace PIMVIII.Models
         public Usuario Usuario { get; set; }
 
         public List<ItemPlaylist> Itens { get; set; } = new List<ItemPlaylist>();
-        
-        [NotMapped]
-        public List<Conteudo> Conteudos { get; set; } = new List<Conteudo>();
+
+        public List<Conteudo> Conteudos { get; set; } = new List<Conteudo>(); 
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PIMVIII.DTOs;
 using PIMVIII.Models;
 using PIMVIII.Repositories;
@@ -11,20 +12,19 @@ namespace PIMVIII.Controllers
     {
         IPlaylistRepository _playlistRepository;
         IUsuarioRepository _usuarioRepository;
-        IConteudoRepository _conteudoRepository;
 
-        public PlaylistController(IPlaylistRepository playlistRepository, IUsuarioRepository usuarioRepository, IConteudoRepository conteudoRepository)
+        public PlaylistController(IPlaylistRepository playlistRepository, IUsuarioRepository usuarioRepository)
         {
             _playlistRepository = playlistRepository;
             _usuarioRepository = usuarioRepository;
-            _conteudoRepository = conteudoRepository;
         }
 
-        /// <summary>
-        /// Retorna todas as playlists cadastradas.
-        /// </summary>
-        /// <returns>Lista de playlists.</returns>
-        [HttpGet]
+		/// <summary>
+		/// Retorna todas as playlists cadastradas.
+		/// </summary>
+		/// <returns>Lista de playlists.</returns>
+		[Authorize]
+		[HttpGet]
         public ActionResult<List<PlaylistDto>> GetAll()
         {
             var playlists = _playlistRepository.GetAllPlaylists();
@@ -32,11 +32,12 @@ namespace PIMVIII.Controllers
             return Ok(playlists.Select(PlaylistDto.MapFrom).ToList() ?? new List<PlaylistDto>()); 
         }
 
-        /// <summary>
-        /// Retorna uma playlist localizada pelo Id informado.
-        /// </summary>
-        /// <returns>Playlist</returns>
-        [HttpGet("{id}")]
+		/// <summary>
+		/// Retorna uma playlist localizada pelo Id informado.
+		/// </summary>
+		/// <returns>Playlist</returns>
+		[Authorize]
+		[HttpGet("{id}")]
         public ActionResult<PlaylistDto> GetById(int id)
         {
             var playlist = _playlistRepository.GetPlaylistByID(id);
@@ -49,11 +50,12 @@ namespace PIMVIII.Controllers
             return Ok(PlaylistDto.MapFrom(playlist));
         }
 
-        /// <summary>
-        /// Adiciona uma nova playlist.
-        /// </summary>
-        /// <returns>Playlist.</returns>
-        [HttpPost]
+		/// <summary>
+		/// Adiciona uma nova playlist.
+		/// </summary>
+		/// <returns>Playlist.</returns>
+		[Authorize]
+		[HttpPost]
         public ActionResult Add(PlaylistAddDto dto)
         {
             var playlist = new Playlist
@@ -68,10 +70,11 @@ namespace PIMVIII.Controllers
             return CreatedAtAction(nameof(GetById), new { id = playlist.ID }, new { id = playlist.ID });
         }
 
-        /// <summary>
-        /// Atualiza uma playlist
-        /// </summary>
-        [HttpPut("{id}")]
+		/// <summary>
+		/// Atualiza uma playlist
+		/// </summary>
+		[Authorize]
+		[HttpPut("{id}")]
         public ActionResult Update(int id, PlaylistUpdateDto dto)
         {
             var existingPlaylist = _playlistRepository.GetPlaylistByID(id);
@@ -85,18 +88,19 @@ namespace PIMVIII.Controllers
             {
                 ID = id,
                 Nome = dto.Nome,
-                Conteudos = _conteudoRepository.GetConteudosByIds(dto.IdConteudos)
-            };
+				Itens = dto.IdConteudos.Select(conteudo => new ItemPlaylist { ConteudoID = conteudo }).ToList()
+			};
 
             _playlistRepository.UpdatePlaylist(playlist);
 
             return NoContent();
         }
 
-        /// <summary>
-        /// Exclui uma playlist
-        /// </summary>
-        [HttpDelete("{id}")]
+		/// <summary>
+		/// Exclui uma playlist
+		/// </summary>
+		[Authorize]
+		[HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
             var playlist = _playlistRepository.GetPlaylistByID(id);

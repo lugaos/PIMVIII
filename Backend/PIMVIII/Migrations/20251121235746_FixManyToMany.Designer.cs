@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PIMVIII.Data;
 
@@ -10,9 +11,11 @@ using PIMVIII.Data;
 namespace PIMVIII.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251121235746_FixManyToMany")]
+    partial class FixManyToMany
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -122,10 +125,6 @@ namespace PIMVIII.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SenhaCriptografada")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("ID");
 
                     b.ToTable("Usuario");
@@ -134,7 +133,7 @@ namespace PIMVIII.Migrations
             modelBuilder.Entity("PIMVIII.Models.Conteudo", b =>
                 {
                     b.HasOne("PIMVIII.Models.Criador", "Criador")
-                        .WithMany("Conteudos")
+                        .WithMany()
                         .HasForeignKey("CriadorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -168,7 +167,7 @@ namespace PIMVIII.Migrations
             modelBuilder.Entity("PIMVIII.Models.Playlist", b =>
                 {
                     b.HasOne("PIMVIII.Models.Usuario", "Usuario")
-                        .WithMany("Playlists")
+                        .WithMany()
                         .HasForeignKey("UsuarioID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -176,21 +175,11 @@ namespace PIMVIII.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("PIMVIII.Models.Criador", b =>
-                {
-                    b.Navigation("Conteudos");
-                });
-
             modelBuilder.Entity("PIMVIII.Models.Playlist", b =>
                 {
                     b.Navigation("Conteudos");
 
                     b.Navigation("Itens");
-                });
-
-            modelBuilder.Entity("PIMVIII.Models.Usuario", b =>
-                {
-                    b.Navigation("Playlists");
                 });
 #pragma warning restore 612, 618
         }

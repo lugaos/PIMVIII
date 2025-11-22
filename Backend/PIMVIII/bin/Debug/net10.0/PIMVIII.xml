@@ -4,6 +4,24 @@
         <name>PIMVIII</name>
     </assembly>
     <members>
+        <member name="M:PIMVIII.Controllers.AuthController.Add(PIMVIII.DTOs.UsuarioAddDto)">
+            <summary>
+            Cadastra um novo usuário no sistema
+            </summary>
+            <returns>Cadastrar Usuario</returns>
+        </member>
+        <member name="M:PIMVIII.Controllers.AuthController.Update(System.Int32,PIMVIII.DTOs.UsuarioUpdateDto)">
+            <summary>
+            Atualiza um usuário no sistema
+            </summary>
+            <returns>Atualizar Usuario</returns>
+        </member>
+        <member name="M:PIMVIII.Controllers.AuthController.Login(PIMVIII.DTOs.LoginDto)">
+            <summary>
+            Efetua login do usuário e obtem o token de acesso
+            </summary>
+            <returns>Token</returns>
+        </member>
         <member name="M:PIMVIII.Controllers.PlaylistController.GetAll">
             <summary>
             Retorna todas as playlists cadastradas.
@@ -59,9 +77,6 @@
         </member>
         <member name="P:PIMVIII.DTOs.CriadorDto.Nome">
             <summary>Nome do criador.</summary>
-        </member>
-        <member name="P:PIMVIII.DTOs.CriadorDto.Conteudos">
-            <summary>Lista de Conteudos do criador.</summary>
         </member>
         <member name="T:PIMVIII.DTOs.PlaylistAddDto">
             <summary>
@@ -141,6 +156,30 @@
             <inheritdoc />
         </member>
         <member name="M:PIMVIII.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PIMVIII.Migrations.FixManyToMany">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.FixManyToMany.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.FixManyToMany.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.FixManyToMany.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PIMVIII.Migrations.AddSenhaHashToUsuario">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.AddSenhaHashToUsuario.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.AddSenhaHashToUsuario.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PIMVIII.Migrations.AddSenhaHashToUsuario.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

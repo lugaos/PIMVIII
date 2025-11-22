@@ -168,4 +168,6 @@ E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\bin\Debug\net10.0\runtimes\win
 E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\obj\Debug\net10.0\PIMVIII.sourcelink.json
+E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Repositório\Faculdade\PIMVIII\Backend\PIMVIII\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

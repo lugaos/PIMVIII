@@ -8,7 +8,8 @@ namespace PIMVIII.Models
         public string Nome { get; set; } = null!;
         public string Email { get; set; } = null!;
 
-        [NotMapped]
-        public List<Playlist> Playlists { get; set; } = new List<Playlist>();
+		public string SenhaCriptografada { get; set; } = null!;
+
+		public List<Playlist> Playlists { get; set; } = new List<Playlist>();
     }
 }

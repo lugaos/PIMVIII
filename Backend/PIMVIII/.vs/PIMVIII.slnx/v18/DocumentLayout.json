@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\repositories\\playlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:repositories\\playlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\repositories\\playlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:repositories\\playlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\playlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\playlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\criadordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\criadordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\playlistadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\playlistadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\playlistupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\playlistupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\usuarioupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\usuarioupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\conteudodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\conteudodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\usuarioadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\usuarioadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\data\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,6 +53,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\repositories\\iplaylistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:repositories\\iplaylistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\dtos\\criadordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:dtos\\criadordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|e:\\reposit\u00F3rio\\faculdade\\pimviii\\backend\\pimviii\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7531AC2-A70F-FE61-4BF7-A71168220C5B}|PIMVIII.csproj|solutionrelative:models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,58 +78,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CriadorDto.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\CriadorDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\CriadorDto.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\CriadorDto.cs",
-              "RelativeToolTip": "DTOs\\CriadorDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:08:18.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ConteudoDto.cs",
               "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\ConteudoDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ConteudoDto.cs",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\ConteudoDto.cs",
               "RelativeToolTip": "DTOs\\ConteudoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T01:08:17.275Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAwwEUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T02:07:21.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UsuarioDto.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\UsuarioDto.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioDto.cs",
-              "RelativeToolTip": "DTOs\\UsuarioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:08:11.172Z",
+              "WhenOpened": "2025-11-22T01:39:18.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PlaylistUpdateDto.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistUpdateDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\PlaylistUpdateDto.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistUpdateDto.cs",
-              "RelativeToolTip": "DTOs\\PlaylistUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:08:10.172Z",
+              "WhenOpened": "2025-11-22T02:08:26.336Z",
               "EditorCaption": ""
             },
             {
@@ -124,87 +141,74 @@
               "RelativeDocumentMoniker": "Controllers\\PlaylistController.cs",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Controllers\\PlaylistController.cs",
               "RelativeToolTip": "Controllers\\PlaylistController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADgvx0AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T00:07:47.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlaylistRepository.cs",
               "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\PlaylistRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PlaylistRepository.cs",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\PlaylistRepository.cs",
               "RelativeToolTip": "Repositories\\PlaylistRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAD0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T23:58:03.915Z",
+              "WhenOpened": "2025-11-21T22:53:29.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlaylistDto.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\PlaylistDto.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistDto.cs",
-              "RelativeToolTip": "DTOs\\PlaylistDto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAjwBIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:08:21.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T23:23:53.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlaylistAddDto.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistAddDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\PlaylistAddDto.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\PlaylistAddDto.cs",
-              "RelativeToolTip": "DTOs\\PlaylistAddDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T01:08:19.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Seeder.cs",
-              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\Seeder.cs",
-              "RelativeDocumentMoniker": "Data\\Seeder.cs",
-              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\Seeder.cs",
-              "RelativeToolTip": "Data\\Seeder.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwC8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T23:44:49.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-20T19:16:57.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioUpdateDto.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioUpdateDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuarioUpdateDto.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioUpdateDto.cs",
+              "RelativeToolTip": "DTOs\\UsuarioUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T13:30:14.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuarioDto.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioDto.cs",
+              "RelativeToolTip": "DTOs\\UsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T01:39:23.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioAddDto.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioAddDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuarioAddDto.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\UsuarioAddDto.cs",
+              "RelativeToolTip": "DTOs\\UsuarioAddDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T01:39:49.869Z",
               "EditorCaption": ""
             },
             {
@@ -215,9 +219,22 @@
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T23:23:08.952Z",
+              "WhenOpened": "2025-11-22T00:18:04.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Seeder.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\Seeder.cs",
+              "RelativeDocumentMoniker": "Data\\Seeder.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Data\\Seeder.cs",
+              "RelativeToolTip": "Data\\Seeder.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T01:10:33.967Z",
               "EditorCaption": ""
             },
             {
@@ -228,10 +245,58 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwEoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-20T05:49:33.69Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPlaylistRepository.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\IPlaylistRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IPlaylistRepository.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Repositories\\IPlaylistRepository.cs",
+              "RelativeToolTip": "Repositories\\IPlaylistRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T02:26:19.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T01:41:08.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CriadorDto.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\CriadorDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CriadorDto.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\DTOs\\CriadorDto.cs",
+              "RelativeToolTip": "DTOs\\CriadorDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwBIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T00:19:32.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Models\\Playlist.cs",
+              "RelativeDocumentMoniker": "Models\\Playlist.cs",
+              "ToolTip": "E:\\Reposit\u00F3rio\\Faculdade\\PIMVIII\\Backend\\PIMVIII\\Models\\Playlist.cs",
+              "RelativeToolTip": "Models\\Playlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T22:51:27.263Z"
             }
           ]
         }

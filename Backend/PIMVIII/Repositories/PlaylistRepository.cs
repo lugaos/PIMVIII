@@ -4,86 +4,96 @@ using PIMVIII.Models;
 
 namespace PIMVIII.Repositories
 {
-    public class PlaylistRepository : IPlaylistRepository
-    {
-        private readonly AppDbContext _context;
+	public class PlaylistRepository : IPlaylistRepository
+	{
+		private readonly AppDbContext _context;
 
-        public PlaylistRepository(AppDbContext context)
-        {
-            _context = context;
-        }
+		public PlaylistRepository(AppDbContext context)
+		{
+			_context = context;
+		}
 
-        public void AddPlaylist(Playlist playlist)
-        {
-            _context.Playlist.Add(playlist);
-            _context.SaveChanges();
-        }
+		public void AddPlaylist(Playlist playlist)
+		{
+			_context.Playlist.Add(playlist);
+			_context.SaveChanges();
+		}
 
-        public void DeletePlaylist(int id)
-        {
-            var playlist = _context.Playlist.Find(id);
+		public List<Playlist> GetAllPlaylists()
+		{
+			var itens = _context.ItemPlaylist.ToList();
 
-            if (playlist != null)
-            {
-                _context.Playlist.Remove(playlist);
-                _context.SaveChanges();
-            }
-        }
+			var playlists = _context.Playlist
+				.Include(u => u.Usuario)
+				.Include(i => i.Itens)
+					.ThenInclude(i => i.Conteudo)
+						.ThenInclude(c => c.Criador).ToList();
 
-        public List<Playlist> GetAllPlaylists()
-        {
-            var playlists = _context.Playlist.ToList();
+			foreach (var playlist in playlists)
+			{
+				playlist.Conteudos = playlist.Itens
+					.Select(i => i.Conteudo).ToList();
+			}
 
-            foreach (var playlist in playlists)
-            {
-                playlist.Conteudos = playlist.Itens.Select(i => i.Conteudo).ToList();
-            }
+			return playlists;
+		}
 
-            return playlists;
-        }
+		public Playlist GetPlaylistByID(int id)
+		{
+			var itens = _context.ItemPlaylist.ToList();
 
-        public Playlist GetPlaylistByID(int id)
-        {
-            var playlist = _context.Playlist.Find(id);
+			var playlist = _context.Playlist
+				.Include(u => u.Usuario)
+				.Include(i => i.Itens)
+					.ThenInclude(i => i.Conteudo)
+						.ThenInclude(c => c.Criador).FirstOrDefault(p => p.ID == id);
 
-            playlist?.Conteudos = playlist.Itens.Select(i => i.Conteudo).ToList();
+			if (playlist != null)
+			{
+				playlist.Conteudos = playlist.Itens
+						.Select(i => i.Conteudo).ToList();
+			}
 
-            return playlist ?? new Playlist();
-        }
+			return playlist;
+		}
 
-        public void UpdatePlaylist(Playlist playlist)
-        {
-            var existingPlaylist = _context.Playlist
-                  .Include(p => p.Itens)
-                  .FirstOrDefault(p => p.ID == playlist.ID);
+		public void UpdatePlaylist(Playlist playlist)
+		{
+			var existingPlaylist = _context.Playlist
+				  .Include(p => p.Itens)
+				  .FirstOrDefault(p => p.ID == playlist.ID);
 
-            if (existingPlaylist == null) return;
+			if (existingPlaylist == null) return;
 
-            existingPlaylist.Nome = playlist.Nome;
-            existingPlaylist.UsuarioID = playlist.UsuarioID;
+			existingPlaylist.Nome = playlist.Nome;
 
-            var itensParaRemover = existingPlaylist.Itens
-                .Where(ip => !playlist.Conteudos.Any(c => c.ID == ip.ConteudoID))
-                .ToList();
+			existingPlaylist.Itens.Clear();
 
-            foreach (var ip in itensParaRemover)
-                existingPlaylist.Itens.Remove(ip);
+			foreach (var item in playlist.Itens)
+			{
+				existingPlaylist.Itens.Add(new ItemPlaylist
+				{
+					PlaylistID = existingPlaylist.ID,
+					ConteudoID = item.ConteudoID
+				});
+			}
 
-            var conteudosExistentesIds = existingPlaylist.Itens.Select(ip => ip.ConteudoID).ToList();
+			_context.SaveChanges();
+		}
 
-            var novosItens = playlist.Conteudos
-                .Where(c => !conteudosExistentesIds.Contains(c.ID))
-                .Select(c => new ItemPlaylist
-                {
-                    PlaylistID = existingPlaylist.ID,
-                    ConteudoID = c.ID
-                })
-                .ToList();
+		public void DeletePlaylist(int id)
+		{
+			var existingPlaylist = _context.Playlist
+					  .Include(p => p.Itens)
+					  .FirstOrDefault(p => p.ID == id);
 
-            foreach (var ip in novosItens)
-                existingPlaylist.Itens.Add(ip);
+			if (existingPlaylist == null) return;
 
-            _context.SaveChanges();
-        }
-    }
+			_context.ItemPlaylist.RemoveRange(existingPlaylist.Itens);
+
+			_context.Playlist.Remove(existingPlaylist);
+
+			_context.SaveChanges();
+		}
+	}
 }

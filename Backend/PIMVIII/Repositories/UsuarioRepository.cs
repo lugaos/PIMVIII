@@ -1,34 +1,42 @@
-﻿using PIMVIII.Models;
+﻿using PIMVIII.Data;
+using PIMVIII.Models;
 
 namespace PIMVIII.Repositories
 {
-    public class UsuarioRepository : IUsuarioRepository
-    {
-        private readonly List<Usuario> _usuarios = new List<Usuario>();
+	public class UsuarioRepository : IUsuarioRepository
+	{
+		private readonly AppDbContext _context;
 
-        public List<Usuario> GetAllUsuarios() => _usuarios;
+		public UsuarioRepository(AppDbContext context)
+		{
+			_context = context;
+		}
 
-        public Usuario GetUsuarioByID(int id) => _usuarios.Find(usuario => usuario.ID == id);
+		public Usuario? GetUsuarioByEmail(string email)
+		{
+			return _context.Usuario.FirstOrDefault(x => x.Email == email);
+		}
 
-        public void AddUsuario(Usuario usuario) => _usuarios.Add(usuario);
+		public Usuario? GetUsuarioById(int id)
+		{
+			return _context.Usuario.FirstOrDefault(x => x.ID == id);
+		}
 
-        public void UpdateUsuario(Usuario usuario)
-        {
-            var existing = GetUsuarioByID(usuario.ID);
+		public void AddUsuario(Usuario usuario)
+		{
+			_context.Usuario.Add(usuario);
+			_context.SaveChanges();
+		}
 
-            if (existing != null)
-            {
-                existing.Nome = usuario.Nome;
-                existing.Email = usuario.Email;
-                existing.Playlists = usuario.Playlists;
-            }
-        }
+		public void UpdateUsuario(Usuario usuario)
+		{
+			var existingUsuario = GetUsuarioById(usuario.ID);
+			if (existingUsuario == null) return;
 
-        public void DeleteUsuario(int id)
-        {
-            var existing = GetUsuarioByID(id);
-            if (existing != null)
-                _usuarios.Remove(existing);
-        }
-    }
+			existingUsuario.Nome = usuario.Nome;
+			existingUsuario.SenhaCriptografada = usuario.SenhaCriptografada;
+
+			_context.SaveChanges();
+		}
+	}
 }
