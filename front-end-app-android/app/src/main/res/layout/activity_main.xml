@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- IMAGEM DE TOPO (Ilustração) -->
+    <!-- Coloquei um icone padrao, mas aqui voce coloca sua imagem da menina dançando -->
+    <ImageView
+        android:id="@+id/imgIllustration"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/music"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+    <!-- Dica: Mude o src acima para @drawable/sua_imagem_da_menina -->
+
+    <!-- CAMPO DE EMAIL/USUÁRIO -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/dg_input_rounded"
+        android:drawableStart="@android:drawable/ic_menu_myplaces"
+        android:drawablePadding="12dp"
+        android:elevation="4dp"
+        android:hint="Nome"
+        android:inputType="textEmailAddress"
+        android:textColor="#333"
+        android:textColorHint="#999"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIllustration" />
+    <!-- Nota: O drawableStart usa um icone padrao do android, troque pelo seu icone de usuario -->
+
+    <!-- CAMPO DE SENHA -->
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dg_input_rounded"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:drawablePadding="12dp"
+        android:elevation="4dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="#333"
+        android:textColorHint="#999"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <!-- ESQUECEU A SENHA -->
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Esqueceu a senha?"
+        android:textColor="#757575"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    <!-- BOTÃO LOGIN -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_button_de"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtForgot" />
+
+    <!-- RODAPÉ (CRIAR CONTA) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ainda não tem uma conta? "
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/txtCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastre-se"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- CAPA DO ÁLBUM (Com CardView interno para arredondar a foto) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImageContainer"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/imgCapa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_wall3"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/txtNomePlaylist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            tools:text="Nome da Playlist"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/cardImageContainer"
+            app:layout_constraintEnd_toStartOf="@+id/txtDuracao"
+            app:layout_constraintTop_toTopOf="@id/cardImageContainer"
+            app:layout_constraintBottom_toTopOf="@+id/txtQtdMusicas" />
+
+        <!-- SUBTÍTULO -->
+        <TextView
+            android:id="@+id/txtQtdMusicas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="0 músicas"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="@+id/txtNomePlaylist"
+            app:layout_constraintEnd_toEndOf="@+id/txtNomePlaylist"
+            app:layout_constraintTop_toBottomOf="@+id/txtNomePlaylist"
+            app:layout_constraintBottom_toBottomOf="@id/cardImageContainer" />
+
+        <!-- DURAÇÃO -->
+        <TextView
+            android:id="@+id/txtDuracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3:05"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgMenu"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtNomePlaylist" />
+
+        <!-- ÍCONE -->
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_play_arrow_24"
+            app:tint="#CCCCCC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
