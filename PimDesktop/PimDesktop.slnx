@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PimDesktop/PimDesktop.csproj">
+    <Deploy />
+  </Project>
+</Solution>
